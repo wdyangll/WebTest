@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>index</title>
-</head>
-<body>
-<div id="main"></div>
+	<head>
+		<title>index</title>
+	</head>
+	<body>
+		<h1>What to buy</h1>
+		<p title="a gentle reminder">Don't forget to buy this stuff.</p>
+		<ul id="purchases">
+			<li>A tin of beans</li>
+			<li class="sale">Cheese</li>
+			<li class="sale important good">Milk</li>
+		</ul>
 
+	<script> 
+		// alert(typeof document.getElementById("purchases"));
+		var purchases = document.getElementById("purchases");
+		var a = purchases.getElementsByTagName("*");
+		alert(a[0].className);
 
-<script> 
-var beats = ["John","Paul","George","Ringo"];
-var main = document.getElementById("main");
-// if (true) 
-// 	main.innerHTML = beats[2];
-var vin = new Object();
-vin.name = "Vin";
-vin.age = 26;
-
-var output = vin.name + vin.age;
-alert(output);
-</script>
-</body>
+	</script>
+	</body>
 </html>
